@@ -3,13 +3,18 @@ const addBTN = document.querySelector('#add-btn');
 const backBTN = document.querySelector('#back-btn');
 const homePage = document.querySelector('section#HOME');
 const foodPage = document.querySelector('section#ADDFOOD');
+const helpPage = document.querySelector('section#HELP');
+const contactPage = document.querySelector('section#CONTACT');
 const helpBTN = document.querySelector('#help-btn');
 const homeBTN = document.querySelector('#home-btn');
-const contactBTN = document.querySelector('button#contact-BTN');
+const contactBTN = document.querySelector('#contact-btn');
 let lastPage;
 let pages = [];
 pages.push(homePage);
 pages.push(foodPage);
+pages.push(helpPage);
+pages.push(contactPage);
+pages.push(contactPage);
 
 function hasClass(target, cls){
 	if(target.classList.contains(cls)){
@@ -55,6 +60,8 @@ function backPage(){
 
 
 homeBTN.addEventListener('click', function (e){swapPage(homePage)});
+helpBTN.addEventListener('click', function (e){swapPage(helpPage)});
+contactBTN.addEventListener('click', function (e){swapPage(contactPage)});
 addBTN.addEventListener('click', function (e){swapPage(foodPage)});
 backBTN.addEventListener('click', function (e){backPage()});
 
