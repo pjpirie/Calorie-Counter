@@ -1,15 +1,33 @@
 const header = document.querySelector('header>h3');
 const addBTN = document.querySelector('#add-btn');
 const backBTN = document.querySelector('#back-btn');
-const homePage = document.querySelector('section#HOME');
-const foodPage = document.querySelector('section#ADDFOOD');
 const helpBTN = document.querySelector('#help-btn');
 const homeBTN = document.querySelector('#home-btn');
-const contactBTN = document.querySelector('button#contact-BTN');
+const contactBTN = document.querySelector('#contact-btn');
+const fruitBTN = document.querySelector('#fruit-btn');
+const breadBTN = document.querySelector('#bread-btn');
+const meatBTN = document.querySelector('#meat-btn');
+const sugarBTN = document.querySelector('#sugar-btn');
+
+const homePage = document.querySelector('section#HOME');
+const foodPage = document.querySelector('section#ADDFOOD');
+const helpPage = document.querySelector('section#HELP');
+const contactPage = document.querySelector('section#CONTACT');
+const fruitPage = document.querySelector('section#FRUIT');
+const breadPage = document.querySelector('section#BREAD');
+const meatPage = document.querySelector('section#MEAT');
+const sugarPage = document.querySelector('section#SUGAR');
+
 let lastPage;
 let pages = [];
 pages.push(homePage);
 pages.push(foodPage);
+pages.push(helpPage);
+pages.push(contactPage);
+pages.push(fruitPage);
+pages.push(breadPage);
+pages.push(meatPage);
+pages.push(sugarPage);
 
 function hasClass(target, cls){
 	if(target.classList.contains(cls)){
@@ -53,6 +71,17 @@ function backPage(){
 
 
 
-
 homeBTN.addEventListener('click', function (e){swapPage(homePage)});
+helpBTN.addEventListener('click', function (e){swapPage(helpPage)});
+contactBTN.addEventListener('click', function (e){swapPage(contactPage)});
+
+fruitBTN.addEventListener('click', function (e){swapPage(fruitPage)});
+breadBTN.addEventListener('click', function (e){swapPage(breadPage)});
+meatBTN.addEventListener('click', function (e){swapPage(meatPage)});
+sugarBTN.addEventListener('click', function (e){swapPage(sugarPage)});
+
 addBTN.addEventListener('click', function (e){swapPage(foodPage)});
+backBTN.addEventListener('click', function (e){backPage()});
+
+
+
