@@ -1,0 +1,1 @@
+console.log(readData("num2",false));
