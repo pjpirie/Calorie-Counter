@@ -6,6 +6,7 @@
 }
 body{
 	height: 100vh;
+	max-height: 100vh;
 }
 .wrapper{
 	height: 100vh;
@@ -21,7 +22,7 @@ header{
 	color: #f1f1f1;
 }
 header>h3{
-	margin: 10% 0px 0px 0px;
+	margin: auto;
 }
 header>button{
 	background-color: #98CF6A;
@@ -43,6 +44,7 @@ section{
 	display: none;
 }
 section.active{
+	height: 100%;
 	display: grid;
 	grid-template-rows: 70% 30%;
 }
@@ -59,8 +61,9 @@ footer>button{
 
 }
 
-
-
+img{
+	margin: auto
+}
 
 
 
@@ -74,6 +77,8 @@ footer>button{
 	grid-row: 1/2;
 	background-color: #fff;
 	border: 0px;
+	height: 100%;
+	max-width: 100%; 
 }
 #counter{
 	grid-row: 2/3;
@@ -85,12 +90,16 @@ footer>button{
 	transform: translateX(-50%);
 	left: 50%;
 	display: inline-block;
+	height: 100%;
 }
 #counter>p{
 	font-weight: 700;
 	font-size: 3rem;
 	color: #98CF6A;
-	width: auto;
+	width: auto;    
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #ADDFOOD{
 	padding: 50px 0px;

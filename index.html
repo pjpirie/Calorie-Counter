@@ -9,6 +9,8 @@
     <script src="scripts/navigation-script.js" defer></script>
     <script src="scripts/storage-handler.js" defer></script>
     <script src="scripts/logic.js" defer></script>
+    <script src="scripts/storage.js" defer></script>
+    <script src="scripts/page-handler.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -21,10 +23,7 @@
       <main>
         
         <section id="HOME" class="active" title="ADOBE FOOD CC">
-          <button id="add-btn">
-          <img src="assets/SVG/Add-BTN.svg" alt="Add Calories">
-          </button>
-          
+          <img id="add-btn" src="assets/SVG/Add-BTN.svg" alt="Add Calories">
           <div id="counter"><p>219</p></div>
         </section>
         
@@ -51,7 +50,7 @@
           <div id="bread-btn"><h3>BREAD</h3></div>
           <div id="meat-btn"><h3>MEAT</h3></div>
           <div id="sugar-btn"><h3>SUGAR</h3></div>
-          <div id="your-btn"><h3>YOUR FOOD</h3></div>
+          <div id="your-btn" hidden><h3>YOUR FOOD</h3></div>
         </section>
         <section id="CALORIES" title="YOUR CALORIES">
           <div id="calorie-list"></div>
@@ -77,7 +76,7 @@
           <div id="???-btn"><h3>???</h3></div>
         </section>
         <section id="YOUR" title="YOUR FOOD">
-          <!-- load from local storage -->
+          load from local storage
         </section>
       </main>
       <footer>
