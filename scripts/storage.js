@@ -62,4 +62,22 @@ let sugar = [
 		}
 	]
 
-let foodGroups = [{group: 'fruit', data: fruit},{group: 'bread', data: bread},{group: 'meat', data: meat},{group: 'sugar', data: sugar}]
+let foodGroups = [
+	{
+		name: 'fruit',
+		id: 'fruit-btn',
+		data: fruit
+	},
+	{
+		name: 'bread',
+		data: bread
+	},
+	{
+		name: 'meat',
+		 data: meat
+	},
+	{
+		name: 'sugar',
+		 data: sugar
+	}
+]

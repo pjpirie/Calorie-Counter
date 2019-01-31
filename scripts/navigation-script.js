@@ -28,6 +28,7 @@ const sugarPage = document.querySelector('section#SUGAR');
 const yourPage = document.querySelector('section#YOUR');
 const caloriesPage = document.querySelector('section#YOUR');
 
+
 let lastPage;
 let pages = [];
 pages.push(homePage);
@@ -96,6 +97,5 @@ caloriesBTN.addEventListener('click', function (e){swapPage(caloriesPage)});
 
 addBTN.addEventListener('click', function (e){swapPage(foodPage)});
 backBTN.addEventListener('click', function (e){backPage()});
-
 
 

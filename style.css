@@ -9,7 +9,9 @@ body{
 	max-height: 100vh;
 }
 .wrapper{
+	/*position: fixed;*/
 	height: 100vh;
+	width: 100%;
 	display: grid;
 	grid-template-rows: 10% 80% 10%;
 }
@@ -43,7 +45,7 @@ main{
 section{
 	display: none;
 }
-section.active{
+section#HOME.active{
 	height: 100%;
 	display: grid;
 	grid-template-rows: 70% 30%;
@@ -65,9 +67,22 @@ img{
 	margin: auto
 }
 
+section.list-page.active{
+	overflow-y: scroll;
+	padding: 5vmin 0 0 0;
+	height: 100%;
+	display: grid;
+	grid-auto-rows: 10%;
+	grid-row-gap: 5vmin;
+}
+section.list-page.active>div{
+	height:100%;
+	width: 100%;
+}
 
-
-
+#fruit-btn{
+	/*display: none;*/
+}
 
 
 #HOME{
@@ -110,6 +125,6 @@ img{
 }
 section>div{
 	text-align: center;
-	padding: 30px 0px;
+	padding: 5vmin 0px;
 	background: #C8DCBC
 }
