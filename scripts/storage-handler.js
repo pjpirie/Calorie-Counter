@@ -25,3 +25,18 @@ function readData(key, parse){
 function Food(group,cal){
 
 }
+
+function getFoods(){
+	let foodG = readData('foodGroups',true);
+	let FoodList = [];
+	let foodI = [];
+	for(let i = 0; i<foodG.length;i++){
+		foodI = foodG[i].data;
+		console.log(foodG[i]);
+		for(let i = 0; i<foodI.length;i++){
+			FoodList.push(foodI[i]);
+			console.log(foodI[i]);
+		}
+	}
+	return FoodList;
+}

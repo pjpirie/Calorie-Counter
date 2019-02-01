@@ -63,8 +63,11 @@ pages.push(otherPage);//other
 pages.push(customFoodPage); //Custom Food
 // pages.push(caloriesPage);
 
+let foodsArray = getFoods();
+
+
 function hasClass(target, cls){
-	console.log(target);
+	// console.log(target);
 	if(target.classList.contains(cls)){
 		return true;
 	}else{
@@ -125,5 +128,14 @@ for(let i = 0; i<buttons.length;i++){
 		buttons[i].addEventListener('click', function(e){swapPage(pages[i])});
 	}
 }
+function loadFoodArray(){
+	for(let i = 0; i<foodsArray.length;i++){
+		if(foodsArray[i].id != null){
+			console.log(foodsArray[i].id);
+			document.getElementById(foodsArray[i].id).addEventListener('click', function(e){addFoodToTodaysCalories(foodsArray[i])});
+		}
+	}	
+}
+
 swapPage(homePage);
 

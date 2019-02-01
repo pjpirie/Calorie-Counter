@@ -6,8 +6,10 @@
 
 console.log(readData("num2",false));
 
-function addFoodToTodaysCalories(){
-
+function addFoodToTodaysCalories(food){
+	addCal(food.kcal);
+	console.log(food.name + " " + food.kcal);
+	storeData('todaysCalories', food, true);
 }
 
 window.addEventListener('DOMContentLoaded', function(e){
@@ -17,4 +19,6 @@ window.addEventListener('DOMContentLoaded', function(e){
 	loadFoods('bread',document.querySelector('#BREAD'));
 	loadFoods('meat',document.querySelector('#MEAT'));
 	loadFoods('sugar',document.querySelector('#SUGAR'));
+	loadFoods('other',document.querySelector('#OTHER'));
+	loadFoodArray();
 })
