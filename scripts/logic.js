@@ -6,9 +6,15 @@
 
 console.log(readData("num2",false));
 
-function addFoodToTodaysCalories()
+function addFoodToTodaysCalories(){
 
-document.addEventListener('DOMContentLoaded', function(e){
+}
+
+window.addEventListener('DOMContentLoaded', function(e){
+	storeData('foodGroups',foodGroups,true);
 	loadCalories();
-	loadFoods();
+	loadFoods('fruit',document.querySelector('#FRUIT'));
+	loadFoods('bread',document.querySelector('#BREAD'));
+	loadFoods('meat',document.querySelector('#MEAT'));
+	loadFoods('sugar',document.querySelector('#SUGAR'));
 })

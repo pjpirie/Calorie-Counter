@@ -1,14 +1,16 @@
 let fruit = [
 		{
-			name: 'apple',
-			calorie: 10,
+			name: 'APPLE',
+			id: 'apple-btn',
+			kcal: 10,
 			fat: 0,
 			sugar: 2
 		},
 
 		{
-			name: 'banana',
-			calorie: 20,
+			name: 'BANANA',
+			id: 'banana-btn',
+			kcal: 20,
 			fat: 4,
 			sugar: 0
 		}
@@ -16,15 +18,17 @@ let fruit = [
 
 let bread = [
 		{
-			name: 'bagel',
-			calorie: 80,
+			name: 'BAGEL',
+			id: 'bagel-btn',
+			kcal: 80,
 			fat: 10,
 			sugar: 0
 		},
 		
 		{
-			name: 'jaffa',
-			calorie: 80,
+			name: 'JAFFA',
+			id: 'jaffa-btn',
+			kcal: 80,
 			fat: 12,
 			sugar: 9
 		}
@@ -32,15 +36,17 @@ let bread = [
 
 let meat = [
 		{
-			name:'beef',
-			calorie: 120,
+			name:'BEEF',
+			id: 'beef-btn',
+			kcal: 120,
 			fat: 22,
 			sugar: 0
 		},
 		
 		{
-			name:'pork',
-			calorie: 200,
+			name:'PORK',
+			id: 'pork-btn',
+			kcal: 200,
 			fat: 19,
 			sugar: 0
 		}
@@ -48,15 +54,17 @@ let meat = [
 
 let sugar = [
 		{
-			name:'honey',
-			calorie: 90,
+			name:'HONEY',
+			id: 'honey-btn',
+			kcal: 90,
 			fat: 0,
 			sugar: 22
 		},
 		
 		{
-			name:'jam',
-			calorie: 120,
+			name:'JAM',
+			id: 'jam-btn',
+			kcal: 120,
 			fat: 0,
 			sugar: 16
 		}
@@ -70,14 +78,21 @@ let foodGroups = [
 	},
 	{
 		name: 'bread',
+		id: 'bread-btn',
 		data: bread
 	},
 	{
 		name: 'meat',
-		 data: meat
+		id: 'meat-btn',
+		data: meat
 	},
 	{
 		name: 'sugar',
-		 data: sugar
+		id: 'sugar-btn',
+		data: sugar
+	},
+	{
+		name: 'your',
+		id: 'your-btn',
 	}
 ]
