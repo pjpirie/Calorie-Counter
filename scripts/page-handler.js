@@ -51,4 +51,5 @@ function loadFoods(food_group, location){
 			}
 		}
 	}
+	createOption("ADD YOUR OWN",null,'custom-food-btn',location);
 }

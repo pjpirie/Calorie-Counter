@@ -50,7 +50,7 @@
           <div id="bread-btn"><h3>BREAD</h3></div>
           <div id="meat-btn"><h3>MEAT</h3></div>
           <div id="sugar-btn"><h3>SUGAR</h3></div>
-          <div id="your-btn" hidden><h3>YOUR FOOD</h3></div>
+          <div id="other-btn"><h3>OTHER</h3></div>
         </section>
         <section class="list-page" id="CALORIES" title="YOUR CALORIES">
           <div id="calorie-list"></div>
@@ -66,7 +66,7 @@
           <div id="jaffa-btn"><h3>JAFFA CAKE</h3></div> -->
         </section>
         <section class="list-page" id="MEAT" title="MEAT">
-          <<!-- div id="beef-btn"><h3>BEEF</h3></div>
+<!--           <div id="beef-btn"><h3>BEEF</h3></div>
           <div id="chicken-btn"><h3>CHICKEN</h3></div>
           <div id="pork-btn"><h3>PORK</h3></div> -->
         </section>
@@ -75,8 +75,30 @@
           <div id="jam-btn"><h3>JAM</h3></div>
           <div id="???-btn"><h3>???</h3></div> -->
         </section>
-        <section class="list-page" id="YOUR" title="YOUR FOOD">
+        <section class="list-page" id="OTHER" title="OTHER">
           <!-- <div style="background-color: unset;"></div> -->
+        </section>
+        <section class="list-page" id="YOUR" title="TODAYS CALORIES">
+          <!-- <div style="background-color: unset;"></div> -->
+        </section>
+        <section class="" id="CUSTOMFOOD" title="ADD CUSTOM FOOD">
+          <form>
+            <label>Food Name:
+              <input type="text" name="foodName" id="foodName" placeholder="Cheese Sandwich">
+            </label>
+            <label>Food Calories:
+              <input type="text" name="foodCals" id="foodCals" placeholder="119">
+            </label>
+            <label>Food Category:
+              <select id="foodCategory">
+                <option value="fruit">FRUIT</option>
+                <option value="bread">BREAD</option>
+                <option value="meat">MEAT</option>
+                <option value="sugar">SUGAR</option>
+                <option value="other">OTHER</option>
+              </select>
+            </label>
+          </form>
         </section>
       </main>
       <footer>

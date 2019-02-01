@@ -69,6 +69,13 @@ let sugar = [
 			sugar: 16
 		}
 	]
+let other = [
+		{
+			name: 'water',
+			id: 'water-btn',
+			kcal: 0,
+		}
+	];
 
 let foodGroups = [
 	{
@@ -92,7 +99,8 @@ let foodGroups = [
 		data: sugar
 	},
 	{
-		name: 'your',
-		id: 'your-btn',
+		name: 'other',
+		id: 'other-btn',
+		data: other
 	}
 ]
