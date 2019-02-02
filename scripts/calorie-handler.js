@@ -26,3 +26,19 @@ function addCal(n){
 		console.log('CC: NaN')
 	}
 }
+
+
+function initCal(){
+
+}
+
+function refreshCals(){
+	let food = readData('todaysCalories', true);
+	setCal(0);
+	console.log(food); 
+	food.forEach(function(i){
+		console.log(i);
+		addCal(i.kcal);
+	});
+	console.log(food); 
+}

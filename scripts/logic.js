@@ -4,12 +4,25 @@
 // ***          Paul Pirie            ***
 // **************************************
 
+refreshCals();
+
 console.log(readData("num2",false));
 
 function addFoodToTodaysCalories(food){
+	let todaysFood = [];
 	addCal(food.kcal);
 	console.log(food.name + " " + food.kcal);
-	storeData('todaysCalories', food, true);
+	if(readData('todaysCalories',true) == null){
+		todaysFood = [];
+		todaysFood.push(food);
+		storeData('todaysCalories', todaysFood, true);
+	}else{
+		todaysFood = readData('todaysCalories',true);
+		console.log(todaysFood);
+		todaysFood.push(food);
+		storeData('todaysCalories', todaysFood, true);
+	}
+	refreshCals();
 }
 
 window.addEventListener('DOMContentLoaded', function(e){
@@ -22,3 +35,8 @@ window.addEventListener('DOMContentLoaded', function(e){
 	loadFoods('other',document.querySelector('#OTHER'));
 	loadFoodArray();
 })
+
+
+function resetCals(){
+	localStorage.clear();
+}
